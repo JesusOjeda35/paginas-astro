@@ -19,10 +19,10 @@ const { title } = Astro.props;
 	<body class="p-0 m-0">
 		<div class="bg-gray-950 p-2"><p class="text-white text-sm">asd</p></div>
 		<header class="bg-white flex p-4 justify-between">
-			<div class="flex gap-1 fixed left-12">
+			<div class="flex gap-1 left-12">
 				<p class="text-2xl font-bold">Ozone</p>
 			</div>
-			<nav class="flex fixed w-full gap-4 left-[800px]">
+			<nav class="flex gap-4 left-[800px]">
 				<ul class="flex">
 					<li class="mr-3"><a href="#">Features</a></li>
 					<li class="mr-3"><a href="#">Categories</a></li>
@@ -31,7 +31,7 @@ const { title } = Astro.props;
 					<li class="mr-3"><a href="#">About us</a></li>
 				</ul>
 			</nav>
-			<div class="flex fixed gap-4 left-[1750px] cursor-pointer">
+			<div class="flex gap-4 left-[1750px] cursor-pointer">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -91,24 +91,63 @@ const { title } = Astro.props;
 			</div>
 		</header>
 		<main>
-			<div class="fixed bg-cover bg-no-repeat bg-center pt-[300px] ">
-				<h1 class="text-7xl text-black mb-4 capitalize pl-8">August Collection</h1>
-				<div class="mt-2 text-center">
-					<p>Top Fashion Trending</p>
+			<div
+				class="bg-cover bg-no-repeat bg-center pt-[300px]"
+				style="background-image: url(https://media.glamour.mx/photos/6190c4daf5ed039ceea8d850/master/pass/156462.jpg);"
+			>
+				<div class="cotainer">
+					<h1 class="text-7xl text-black mb-4  pl-8 relative bottom-28">
+						August Collection
+					</h1>
+					<div class="pl-[200px] relative bottom-28">
+						<p>Top Fashion Trending</p>
+					</div>
+					<button class="bg-red-500 px-6 py-2 mt-12 ml-[240px] rounded-xl mb-10 relative bottom-28"
+						><a href="#">See</a></button
+					>
 				</div>
-				<button class="bg-red-500 px-6 py-2 mt-12 ml-[260px]"><a href="#">See</a></button>
-			</div>
-			<div class="bg-black mt-9 ">
-				<img
-					class="w-[1950px] h-[800px]"
-					src="https://media.glamour.mx/photos/6190c4daf5ed039ceea8d850/master/pass/156462.jpg"
-					alt=""
-				/>
 			</div>
 		</main>
-		<div class="text-left mt-6">
-			<h2>Daily Deals</h2>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi rem error velit quos distinctio sint labore quod ipsam hic totam?</p>
+		<div class="ml-8 text-left mt-14 w-[400px]">
+			<h2 class="text-7xl">Daily Deals</h2>
+			<p class="mt-5 text-lg">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+				rem error velit quos distinctio sint labore quod ipsam hic
+				totam?
+			</p>
 		</div>
+		<div class="relative bottom-11 -mt-[110px] h-[400px] flex gap-3 max-w-[1200px] ml-[600px]">
+			<div class="min-w-44 bg-gray-300 rounded-md grow"><img src="https://muma.co/wp-content/uploads/2023/04/157.png" alt=""></div>
+			<div class="min-w-44 bg-gray-300 rounded-md grow"><img src="https://muma.co/wp-content/uploads/2023/04/157.png" alt=""></div>
+			<div class="min-w-44 bg-gray-300 rounded-md grow"><img src="https://muma.co/wp-content/uploads/2023/04/157.png" alt=""></div>
+		</div>
+		</div>
+		<div class="bg-gray-950 p-2"><p class="text-white text-sm text-center">Lorem ipsum dolor sit amet.</p></div>
+		<div class="ml-[20px] flex gap-3 w-[1870px] mt-16 h-[616px] ">
+			<div class=" bg-gray-300 rounded-md grow"><img class="w-[100%]" src="https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-d-a-pretty-girl-wearing-glasses-and-pointing-hand-to-peaceful-png-image_13217783.png" alt=""><p class="text-8xl relative bottom-[400px] left-[180px] text-white max-w-10">MEN</p></div>
+			<div class="bg-gray-300 rounded-md grow"><img class="w-[100%]" src="https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-d-a-pretty-girl-wearing-glasses-and-pointing-hand-to-peaceful-png-image_13217783.png" alt=""><p class="text-8xl relative bottom-[400px] left-[140px] text-white max-w-10">Women</p></div>
+			<div class="bg-gray-300 rounded-md grow" ><img class="w-[100%]" src="https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-d-a-pretty-girl-wearing-glasses-and-pointing-hand-to-peaceful-png-image_13217783.png" alt=""><p class="text-8xl relative bottom-[400px] left-[190px] text-white max-w-10">KIDS</p></div>
+		</div>
+		<div class="text-6xl text-black font-bold text-center mt-16">Best seller</div>
+		<div class="bg-gray-950 p-2"><p class="text-white text-sm text-center">Lorem ipsum dolor sit amet.</p></div>
+		<footer>
+			<div class="text-center mt-4">
+				<h2 class="text-4xl font-bold">Ozone</h2>
+				<p class="text-sm">Lorem ipsum dolor sit amet.</p>
+				<p class="text-2xl text-red-500">+57 3166979109</p>
+				<p class="text-xs">Lorem, ipsum dolor.</p>
+			</div>
+			<div class="text-center ">
+				<ul class="flex gap-6 relative left-[700px] mt-12 ">
+					<li><a href="">Conctact us</a></li>
+					<li><a href="">Information</a></li>
+					<li><a href="">Extras</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Service polices</a></li>
+					<li><a href="">Map</a></li>
+				</ul>
+			</div>
+			<div class="text-center mt-12 mb-10"><h4>Copyright © 2024 Tailwind Labs Inc.</h4></div>
+		</footer>
 	</body>
 </html>
