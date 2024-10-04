@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,35 +16,99 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="p-0 m-0">
+		<div class="bg-gray-950 p-2"><p class="text-white text-sm">asd</p></div>
+		<header class="bg-white flex p-4 justify-between">
+			<div class="flex gap-1 fixed left-12">
+				<p class="text-2xl font-bold">Ozone</p>
+			</div>
+			<nav class="flex fixed w-full gap-4 left-[800px]">
+				<ul class="flex">
+					<li class="mr-3"><a href="#">Features</a></li>
+					<li class="mr-3"><a href="#">Categories</a></li>
+					<li class="mr-3"><a href="#">Contact Us</a></li>
+					<li class="mr-3"><a href="#">Blog</a></li>
+					<li class="mr-3"><a href="#">About us</a></li>
+				</ul>
+			</nav>
+			<div class="flex fixed gap-4 left-[1750px] cursor-pointer">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+					></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+					></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+					></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+					></path>
+				</svg>
+			</div>
+		</header>
+		<main>
+			<div class="fixed bg-cover bg-no-repeat bg-center pt-[300px] ">
+				<h1 class="text-7xl text-black mb-4 capitalize pl-8">August Collection</h1>
+				<div class="mt-2 text-center">
+					<p>Top Fashion Trending</p>
+				</div>
+				<button class="bg-red-500 px-6 py-2 mt-12 ml-[260px]"><a href="#">See</a></button>
+			</div>
+			<div class="bg-black mt-9 ">
+				<img
+					class="w-[1950px] h-[800px]"
+					src="https://media.glamour.mx/photos/6190c4daf5ed039ceea8d850/master/pass/156462.jpg"
+					alt=""
+				/>
+			</div>
+		</main>
+		<div class="text-left mt-6">
+			<h2>Daily Deals</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi rem error velit quos distinctio sint labore quod ipsam hic totam?</p>
+		</div>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
